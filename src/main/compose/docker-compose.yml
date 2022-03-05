@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  postgress-maq:
+    container_name: controle-users
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: ADMIN
+      POSTGRES_PASSWORD: ADMIN
+    ports:
+      - 5432:5432
